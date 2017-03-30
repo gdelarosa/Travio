@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		513DD75F1E4A47DE0049E8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD75E1E4A47DE0049E8DE /* AppDelegate.swift */; };
+		513DD7711E4A47FB0049E8DE /* DetroitOperaHouse.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 513DD7701E4A47FB0049E8DE /* DetroitOperaHouse.gpx */; };
+		513DD7751E4A48380049E8DE /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7721E4A48380049E8DE /* ContactsVC.swift */; };
+		513DD7761E4A48380049E8DE /* SafetyTipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7731E4A48380049E8DE /* SafetyTipsVC.swift */; };
+		513DD7771E4A48380049E8DE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7741E4A48380049E8DE /* Cell.swift */; };
+		513DD7791E4A48550049E8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513DD7781E4A48550049E8DE /* Assets.xcassets */; };
+		513DD77C1E4A48690049E8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513DD77A1E4A48690049E8DE /* LaunchScreen.storyboard */; };
+		513DD77D1E4A48690049E8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513DD77B1E4A48690049E8DE /* Main.storyboard */; };
+		513DD7811E4A48770049E8DE /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD77E1E4A48770049E8DE /* PlaceAnnotation.swift */; };
+		513DD7821E4A48770049E8DE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD77F1E4A48770049E8DE /* Place.swift */; };
+		513DD7851E4A487C0049E8DE /* PlacesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7831E4A487C0049E8DE /* PlacesLoader.swift */; };
+		513DD7891E4A489C0049E8DE /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7871E4A489C0049E8DE /* AnnotationView.swift */; };
+		513DD78A1E4A489C0049E8DE /* RightIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7881E4A489C0049E8DE /* RightIconTableViewCell.swift */; };
+		513DD7941E4A48D20049E8DE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD78D1E4A48D20049E8DE /* BaseViewController.swift */; };
+		513DD7951E4A48D20049E8DE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD78E1E4A48D20049E8DE /* MapViewController.swift */; };
+		513DD7961E4A48D20049E8DE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD78F1E4A48D20049E8DE /* DetailsViewController.swift */; };
+		513DD7971E4A48D20049E8DE /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7901E4A48D20049E8DE /* DirectionsViewController.swift */; };
+		513DD7981E4A48D20049E8DE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7911E4A48D20049E8DE /* ListViewController.swift */; };
+		513DD7991E4A48D20049E8DE /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7921E4A48D20049E8DE /* GalleryViewController.swift */; };
+		513DD79A1E4A48D20049E8DE /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7931E4A48D20049E8DE /* PictureViewController.swift */; };
+		513DD7A21E4A48F10049E8DE /* ARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD79D1E4A48F10049E8DE /* ARAnnotation.swift */; };
+		513DD7A31E4A48F10049E8DE /* ARAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD79E1E4A48F10049E8DE /* ARAnnotationView.swift */; };
+		513DD7A41E4A48F10049E8DE /* ARConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD79F1E4A48F10049E8DE /* ARConfiguration.swift */; };
+		513DD7A51E4A48F10049E8DE /* ARTrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7A01E4A48F10049E8DE /* ARTrackingManager.swift */; };
+		513DD7A61E4A48F10049E8DE /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7A11E4A48F10049E8DE /* ARViewController.swift */; };
+		513DD7A81E4A48F80049E8DE /* DebugMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD7A71E4A48F80049E8DE /* DebugMapViewController.swift */; };
+		513DD7AE1E4A49110049E8DE /* DebugMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513DD7AA1E4A49110049E8DE /* DebugMapViewController.xib */; };
+		513DD7AF1E4A49110049E8DE /* hdar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 513DD7AB1E4A49110049E8DE /* hdar_close.png */; };
+		513DD7B01E4A49110049E8DE /* hdar_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513DD7AC1E4A49110049E8DE /* hdar_close@2x.png */; };
+		513DD7B11E4A49110049E8DE /* hdar_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513DD7AD1E4A49110049E8DE /* hdar_close@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		513DD75B1E4A47DE0049E8DE /* TravioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		513DD75E1E4A47DE0049E8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		513DD76A1E4A47DE0049E8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		513DD7701E4A47FB0049E8DE /* DetroitOperaHouse.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DetroitOperaHouse.gpx; sourceTree = "<group>"; };
+		513DD7721E4A48380049E8DE /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
+		513DD7731E4A48380049E8DE /* SafetyTipsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafetyTipsVC.swift; sourceTree = "<group>"; };
+		513DD7741E4A48380049E8DE /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		513DD7781E4A48550049E8DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		513DD77A1E4A48690049E8DE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		513DD77B1E4A48690049E8DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		513DD77E1E4A48770049E8DE /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		513DD77F1E4A48770049E8DE /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		513DD7831E4A487C0049E8DE /* PlacesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesLoader.swift; sourceTree = "<group>"; };
+		513DD7871E4A489C0049E8DE /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		513DD7881E4A489C0049E8DE /* RightIconTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightIconTableViewCell.swift; sourceTree = "<group>"; };
+		513DD78D1E4A48D20049E8DE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		513DD78E1E4A48D20049E8DE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		513DD78F1E4A48D20049E8DE /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		513DD7901E4A48D20049E8DE /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
+		513DD7911E4A48D20049E8DE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		513DD7921E4A48D20049E8DE /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		513DD7931E4A48D20049E8DE /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		513DD79D1E4A48F10049E8DE /* ARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotation.swift; sourceTree = "<group>"; };
+		513DD79E1E4A48F10049E8DE /* ARAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotationView.swift; sourceTree = "<group>"; };
+		513DD79F1E4A48F10049E8DE /* ARConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARConfiguration.swift; sourceTree = "<group>"; };
+		513DD7A01E4A48F10049E8DE /* ARTrackingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARTrackingManager.swift; sourceTree = "<group>"; };
+		513DD7A11E4A48F10049E8DE /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		513DD7A71E4A48F80049E8DE /* DebugMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugMapViewController.swift; sourceTree = "<group>"; };
+		513DD7AA1E4A49110049E8DE /* DebugMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugMapViewController.xib; sourceTree = "<group>"; };
+		513DD7AB1E4A49110049E8DE /* hdar_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdar_close.png; sourceTree = "<group>"; };
+		513DD7AC1E4A49110049E8DE /* hdar_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@2x.png"; sourceTree = "<group>"; };
+		513DD7AD1E4A49110049E8DE /* hdar_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		513DD7581E4A47DE0049E8DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		513DD7521E4A47DE0049E8DE = {
+			isa = PBXGroup;
+			children = (
+				513DD7701E4A47FB0049E8DE /* DetroitOperaHouse.gpx */,
+				513DD75D1E4A47DE0049E8DE /* TravioApp */,
+				513DD75C1E4A47DE0049E8DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		513DD75C1E4A47DE0049E8DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				513DD75B1E4A47DE0049E8DE /* TravioApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		513DD75D1E4A47DE0049E8DE /* TravioApp */ = {
+			isa = PBXGroup;
+			children = (
+				513DD78C1E4A48B70049E8DE /* HDAugmentedReality */,
+				513DD78B1E4A48A60049E8DE /* VCs */,
+				513DD7861E4A48900049E8DE /* VIews */,
+				513DD7841E4A487C0049E8DE /* Service */,
+				513DD7801E4A48770049E8DE /* Model */,
+				513DD75E1E4A47DE0049E8DE /* AppDelegate.swift */,
+				513DD7721E4A48380049E8DE /* ContactsVC.swift */,
+				513DD7731E4A48380049E8DE /* SafetyTipsVC.swift */,
+				513DD7741E4A48380049E8DE /* Cell.swift */,
+				513DD77A1E4A48690049E8DE /* LaunchScreen.storyboard */,
+				513DD77B1E4A48690049E8DE /* Main.storyboard */,
+				513DD7781E4A48550049E8DE /* Assets.xcassets */,
+				513DD76A1E4A47DE0049E8DE /* Info.plist */,
+			);
+			path = TravioApp;
+			sourceTree = "<group>";
+		};
+		513DD7801E4A48770049E8DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				513DD77E1E4A48770049E8DE /* PlaceAnnotation.swift */,
+				513DD77F1E4A48770049E8DE /* Place.swift */,
+			);
+			name = Model;
+			path = ../../Travio/Travio;
+			sourceTree = "<group>";
+		};
+		513DD7841E4A487C0049E8DE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				513DD7831E4A487C0049E8DE /* PlacesLoader.swift */,
+			);
+			name = Service;
+			path = ../../Travio/Travio;
+			sourceTree = "<group>";
+		};
+		513DD7861E4A48900049E8DE /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				513DD7871E4A489C0049E8DE /* AnnotationView.swift */,
+				513DD7881E4A489C0049E8DE /* RightIconTableViewCell.swift */,
+			);
+			name = VIews;
+			sourceTree = "<group>";
+		};
+		513DD78B1E4A48A60049E8DE /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				513DD78D1E4A48D20049E8DE /* BaseViewController.swift */,
+				513DD78E1E4A48D20049E8DE /* MapViewController.swift */,
+				513DD78F1E4A48D20049E8DE /* DetailsViewController.swift */,
+				513DD7901E4A48D20049E8DE /* DirectionsViewController.swift */,
+				513DD7911E4A48D20049E8DE /* ListViewController.swift */,
+				513DD7921E4A48D20049E8DE /* GalleryViewController.swift */,
+				513DD7931E4A48D20049E8DE /* PictureViewController.swift */,
+			);
+			name = VCs;
+			sourceTree = "<group>";
+		};
+		513DD78C1E4A48B70049E8DE /* HDAugmentedReality */ = {
+			isa = PBXGroup;
+			children = (
+				513DD7A91E4A49000049E8DE /* Resources */,
+				513DD79C1E4A48E70049E8DE /* Debug */,
+				513DD79B1E4A48E10049E8DE /* Classes */,
+			);
+			name = HDAugmentedReality;
+			sourceTree = "<group>";
+		};
+		513DD79B1E4A48E10049E8DE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				513DD79D1E4A48F10049E8DE /* ARAnnotation.swift */,
+				513DD79E1E4A48F10049E8DE /* ARAnnotationView.swift */,
+				513DD79F1E4A48F10049E8DE /* ARConfiguration.swift */,
+				513DD7A01E4A48F10049E8DE /* ARTrackingManager.swift */,
+				513DD7A11E4A48F10049E8DE /* ARViewController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		513DD79C1E4A48E70049E8DE /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				513DD7A71E4A48F80049E8DE /* DebugMapViewController.swift */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		513DD7A91E4A49000049E8DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				513DD7AA1E4A49110049E8DE /* DebugMapViewController.xib */,
+				513DD7AB1E4A49110049E8DE /* hdar_close.png */,
+				513DD7AC1E4A49110049E8DE /* hdar_close@2x.png */,
+				513DD7AD1E4A49110049E8DE /* hdar_close@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		513DD75A1E4A47DE0049E8DE /* TravioApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 513DD76D1E4A47DE0049E8DE /* Build configuration list for PBXNativeTarget "TravioApp" */;
+			buildPhases = (
+				513DD7571E4A47DE0049E8DE /* Sources */,
+				513DD7581E4A47DE0049E8DE /* Frameworks */,
+				513DD7591E4A47DE0049E8DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravioApp;
+			productName = TravioApp;
+			productReference = 513DD75B1E4A47DE0049E8DE /* TravioApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		513DD7531E4A47DE0049E8DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Gina De La Rosa";
+				TargetAttributes = {
+					513DD75A1E4A47DE0049E8DE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A6GUQ7XNWR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 513DD7561E4A47DE0049E8DE /* Build configuration list for PBXProject "TravioApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 513DD7521E4A47DE0049E8DE;
+			productRefGroup = 513DD75C1E4A47DE0049E8DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				513DD75A1E4A47DE0049E8DE /* TravioApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		513DD7591E4A47DE0049E8DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513DD7AE1E4A49110049E8DE /* DebugMapViewController.xib in Resources */,
+				513DD7AF1E4A49110049E8DE /* hdar_close.png in Resources */,
+				513DD77C1E4A48690049E8DE /* LaunchScreen.storyboard in Resources */,
+				513DD7B11E4A49110049E8DE /* hdar_close@3x.png in Resources */,
+				513DD7B01E4A49110049E8DE /* hdar_close@2x.png in Resources */,
+				513DD7711E4A47FB0049E8DE /* DetroitOperaHouse.gpx in Resources */,
+				513DD7791E4A48550049E8DE /* Assets.xcassets in Resources */,
+				513DD77D1E4A48690049E8DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		513DD7571E4A47DE0049E8DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513DD7A61E4A48F10049E8DE /* ARViewController.swift in Sources */,
+				513DD7951E4A48D20049E8DE /* MapViewController.swift in Sources */,
+				513DD79A1E4A48D20049E8DE /* PictureViewController.swift in Sources */,
+				513DD75F1E4A47DE0049E8DE /* AppDelegate.swift in Sources */,
+				513DD7851E4A487C0049E8DE /* PlacesLoader.swift in Sources */,
+				513DD7771E4A48380049E8DE /* Cell.swift in Sources */,
+				513DD7811E4A48770049E8DE /* PlaceAnnotation.swift in Sources */,
+				513DD7821E4A48770049E8DE /* Place.swift in Sources */,
+				513DD7981E4A48D20049E8DE /* ListViewController.swift in Sources */,
+				513DD7941E4A48D20049E8DE /* BaseViewController.swift in Sources */,
+				513DD78A1E4A489C0049E8DE /* RightIconTableViewCell.swift in Sources */,
+				513DD7A81E4A48F80049E8DE /* DebugMapViewController.swift in Sources */,
+				513DD7A31E4A48F10049E8DE /* ARAnnotationView.swift in Sources */,
+				513DD7A51E4A48F10049E8DE /* ARTrackingManager.swift in Sources */,
+				513DD7A21E4A48F10049E8DE /* ARAnnotation.swift in Sources */,
+				513DD7891E4A489C0049E8DE /* AnnotationView.swift in Sources */,
+				513DD7761E4A48380049E8DE /* SafetyTipsVC.swift in Sources */,
+				513DD7A41E4A48F10049E8DE /* ARConfiguration.swift in Sources */,
+				513DD7751E4A48380049E8DE /* ContactsVC.swift in Sources */,
+				513DD7991E4A48D20049E8DE /* GalleryViewController.swift in Sources */,
+				513DD7971E4A48D20049E8DE /* DirectionsViewController.swift in Sources */,
+				513DD7961E4A48D20049E8DE /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		513DD76B1E4A47DE0049E8DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		513DD76C1E4A47DE0049E8DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		513DD76E1E4A47DE0049E8DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A6GUQ7XNWR;
+				INFOPLIST_FILE = TravioApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginadlr.TravioApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		513DD76F1E4A47DE0049E8DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A6GUQ7XNWR;
+				INFOPLIST_FILE = TravioApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginadlr.TravioApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		513DD7561E4A47DE0049E8DE /* Build configuration list for PBXProject "TravioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				513DD76B1E4A47DE0049E8DE /* Debug */,
+				513DD76C1E4A47DE0049E8DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		513DD76D1E4A47DE0049E8DE /* Build configuration list for PBXNativeTarget "TravioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				513DD76E1E4A47DE0049E8DE /* Debug */,
+				513DD76F1E4A47DE0049E8DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 513DD7531E4A47DE0049E8DE /* Project object */;
+}
